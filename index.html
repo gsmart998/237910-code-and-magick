@@ -14,12 +14,11 @@
         86">
     <g id="wizard">
       <g id="wizard-coat">
-        <polygon points="19 67 19 59 14 59 14 82 9 82 9 86 23 86 23 67 19 67"/>
+        <polygon points="19 67 19 59 14 59 14 82 9 82 9 86 23 86 
         <polygon points="19 59 19 67 23 67 23 86 48 86 48 54 19 54 19 59"/>
       </g>
       <g id="wizard-head">
-        <polygon points="48 86 53 86 53 15 58 15 58 10 62 10 62 5 58 5 58 10 48 10 48 5 43 5 43 10 48 10 48 14 48 86"
-                 fill="#be3827"/>
+        <polygon points="48 86 53 86 53 15 58 15 58 10 62 10 62                 fill="#be3827"/>
         <polygon points="9 37 19 37 19 23 48 23 48 28 53 28 53 42 48 42 48 51 14 51 14 46 9 46 9 37"
                  fill="#fbd868"/>
         <rect x="33" y="39" width="10" height="5" fill="#bec1c3"/>
@@ -162,7 +161,7 @@
 
 <footer>
   <p><a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy"
-                                                              width="130">Сделано в HTML Academy</a>в 2017 году</p>
+                                                              width="130">Сделано в HTML Academy
 </footer>
 
 <template id="similar-wizard-template" style="display: none">
@@ -180,7 +179,26 @@
     <p class="setup-similar-label">Петр Петров</p>
   </div>
 </template>
-
+<script type="text/javascript">
+  var fireballSize = 22;
+  var getFireballSpeed = function (left) {
+      if (left) {
+        return 5;
+      };
+      return 2;
+    };
+  var wizardSpeed = 3;
+  var wizardWidth = 70;
+  var getWizardHeight = function () {
+    return 1.337 * wizardWidth;
+  };
+  var getWizardX = function (width) {
+    return width / 2 - wizardWidth / 2;
+  };
+  var getWizardY = function (height) {
+    return height / 3 - getWizardHeight()/2;
+  };
+</script>
 <script src="js/game.js"></script>
 
 </body>
